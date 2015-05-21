@@ -32,7 +32,7 @@ Run the command `.\psake\psake.ps1 .\build.ps1 Test`
 ##DDD - Implementation
 In this sample we use the following implementation
 
-![Domain](https://github.com/gnschenker/DDD-Workshop/blob/master/DDD-Sample/images/domain.png)
+![Domain](https://github.com/gnschenker/DDD-Workshop/blob/master/images/Domain.PNG)
 
 Requests (or commands) flow through the `controller` which delegates them to the `application service`. The application service is the host for the `aggregate` and uses a `repository` to (re-) hydrate the aggregate from the data store and save the changes back to the data store. The aggregate contains all the business logic. The `state` of the aggregate is private to the aggregate and represents the entity that is persisted in the DB using the repository and NHibernate. Thus the `State` is the NHibernate entity. 
 
