@@ -29,6 +29,8 @@ Open a Powershell console and navigate to the folder to which you cloned the rep
 
 Run the command `.\psake\psake.ps1 .\build.ps1 Test`
 
+Or you can also double click the batch file `ClickToBuild.cmd` in the project folder which will also build the solution and run all tests
+
 ##DDD - Implementation
 In this sample we use the following implementation
 
